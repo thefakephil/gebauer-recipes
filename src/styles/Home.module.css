@@ -5,6 +5,11 @@
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
+  text-align: center;
+}
+
+.main>ul {
+  list-style: none;
 }
 
 .description {
