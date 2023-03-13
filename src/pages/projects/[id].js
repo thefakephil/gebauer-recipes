@@ -1,24 +1,24 @@
 import Layout from '../../components/layout';
-import { getAllPostIds, getPostData  } from '../../../lib/posts';
+import { getAllProjectIds, getProjectData  } from '../../../lib/projects';
 import Head from 'next/head'
 import Nav from '../../components/nav'
 import Date from '../../components/date'
 import utilStyles from '../../styles/utils.module.css'
 
-export default function Post({ postData }) {
+export default function Projects({ projectData }) {
   return (
     <> 
     <Nav /> 
     <Layout>
       <Head>
-        <title>{postData.title}</title>
+        <title>{projectData.title}</title>
       </Head>
       <article>
-        <h1 className={utilStyles.headingXl}>{postData.title}</h1>
-        <div className={utilStyles.lightText}>
-          <Date dateString={postData.date} />
-        </div>
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <h1 className={utilStyles.headingXl}>{projectData.title}</h1>
+        {/* <div className={utilStyles.lightText}>
+          <Date dateString={projectData.date} />
+        </div> */}
+        <div dangerouslySetInnerHTML={{ __html: projectData.contentHtml }} />
       </article>
     </Layout>
   </> 
@@ -27,7 +27,7 @@ export default function Post({ postData }) {
 
   export async function getStaticProps({ params }) {
     // Add the "await" keyword like this:
-    const postData = await getPostData(params.id);
+    const postData = await getProjectData(params.id);
   
     return {
       props: {
@@ -37,7 +37,7 @@ export default function Post({ postData }) {
   }
 
 export async function getStaticPaths() {
-  const paths = getAllPostIds();
+  const paths = getAllProjectIds();
   console.log('paths', paths)
   return {
     paths,

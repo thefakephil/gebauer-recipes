@@ -5,8 +5,9 @@ import Link from 'next/link';
 import Nav from '../components/nav'
 import Date from '../components/date';
 import { getSortedPostsData } from '../../lib/posts'
+import { getSortedProjectData } from '../../lib/projects'
 
-export default function Home({ allPostsData }) {
+export default function Home({ allPostsData, allProjectData }) {
   return (
     <>
     <Nav /> 
@@ -20,6 +21,22 @@ export default function Home({ allPostsData }) {
       
         </p>
       </section>
+      <hr/> 
+      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+        <h2 className={utilStyles.headingLg}>Projects</h2>
+        <ul className={utilStyles.list}>
+          {allProjectData.map(({ id, date, title }) => (
+            <li className={utilStyles.listItem} key={id}>
+              <Link href={`/posts/${id}`}>{title}</Link>
+              <br />
+              {/* <small className={utilStyles.lightText}>
+                <Date dateString={date} />
+              </small> */}
+            </li>
+          ))}
+        </ul>
+      </section>
+      <hr/>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
@@ -41,9 +58,11 @@ export default function Home({ allPostsData }) {
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
+  const allProjectData = getSortedProjectData()
   return {
     props: {
-      allPostsData
+      allPostsData,
+      allProjectData
     }
   }
 }
