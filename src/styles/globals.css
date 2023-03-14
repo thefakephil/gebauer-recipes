@@ -29,3 +29,8 @@ img {
 li {
   list-style: none;
 }
+
+::highlight(p) {
+  color: #ad26ad;
+  text-decoration: underline;
+}

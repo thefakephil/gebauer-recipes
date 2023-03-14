@@ -2,7 +2,7 @@ import Layout from '../../components/layout';
 import { getAllProjectIds, getProjectData  } from '../../../lib/projects';
 import Head from 'next/head'
 import Nav from '../../components/nav'
-import Date from '../../components/date'
+// import Date from '../../components/date'
 import utilStyles from '../../styles/utils.module.css'
 
 export default function Projects({ projectData }) {

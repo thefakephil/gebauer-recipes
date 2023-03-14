@@ -18,7 +18,7 @@ export default function Home({ allPostsData, allProjectData }) {
       <section className={utilStyles.headingMd}>
         <p>Software Engineer / Manager</p>
         <p>
-        Hey I'm Phil - I made this site to help me get my projects out in the open, including a few blog posts along the way. 
+        Hey I&lsquo;m Phil - I made this site to help me get my projects out in the open, including a few blog posts along the way. 
 
         I set a few guidelines to help to this - </p> 
         <ul> 
