@@ -27,11 +27,11 @@ export default function Projects({ projectData }) {
 
   export async function getStaticProps({ params }) {
     // Add the "await" keyword like this:
-    const postData = await getProjectData(params.id);
+    const projectData = await getProjectData(params.id);
   
     return {
       props: {
-        postData,
+        projectData,
       },
     };
   }

@@ -18,16 +18,22 @@ export default function Home({ allPostsData, allProjectData }) {
       <section className={utilStyles.headingMd}>
         <p>Software Engineer / Manager</p>
         <p>
-      
-        </p>
+        Hey I'm Phil - I made this site to help me get my projects out in the open, including a few blog posts along the way. 
+
+        I set a few guidelines to help to this - </p> 
+        <ul> 
+          <li> • Prioritize low / no code solutions to get it done ASAP (refactor later)</li>
+          <li> • Post process here (as much as possible) </li>
+          <li> • Fail! Fail quickly and often. But also recognize the wins along the way. </li>  
+        </ul> 
       </section>
       <hr/> 
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Projects</h2>
         <ul className={utilStyles.list}>
-          {allProjectData.map(({ id, date, title }) => (
+          {allProjectData.map(({ id, title }) => (
             <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>{title}</Link>
+              <Link href={`/projects/${id}`}>{title}</Link>
               <br />
               {/* <small className={utilStyles.lightText}>
                 <Date dateString={date} />

@@ -1,5 +1,5 @@
 ---
-title: 'Project Example'
+title: '1000bucks.io'
 date: '2020-01-01'
 ---
 
