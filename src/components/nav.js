@@ -8,8 +8,8 @@ export default function Nav() {
             <ul className={styles.nav}>
                 <li className={styles.navLink}><Link href="/">Home</Link></li>
                 <li className={styles.navLink}><Link href="#">About</Link></li>
-                <li className={styles.navLink}><Link href="#">Projects</Link></li>
-                <li className={styles.navLink}><Link href="#">Contact</Link></li>
+                <li className={styles.navLink}><Link href="/projects">Projects</Link></li>
+                <li className={styles.navLink}><Link href="/post-list">Posts</Link></li>
             </ul>
         </div>
     )

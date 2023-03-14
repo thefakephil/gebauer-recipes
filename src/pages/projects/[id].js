@@ -2,7 +2,7 @@ import Layout from '../../components/layout';
 import { getAllProjectIds, getProjectData  } from '../../../lib/projects';
 import Head from 'next/head'
 import Nav from '../../components/nav'
-// import Date from '../../components/date'
+
 import utilStyles from '../../styles/utils.module.css'
 
 export default function Projects({ projectData }) {
@@ -15,9 +15,6 @@ export default function Projects({ projectData }) {
       </Head>
       <article>
         <h1 className={utilStyles.headingXl}>{projectData.title}</h1>
-        {/* <div className={utilStyles.lightText}>
-          <Date dateString={projectData.date} />
-        </div> */}
         <div dangerouslySetInnerHTML={{ __html: projectData.contentHtml }} />
       </article>
     </Layout>
