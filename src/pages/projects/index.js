@@ -17,6 +17,17 @@ export default function ProjcetList({ allProjectData }) {
         <title>{siteTitle}</title>
       </Head>
       <hr/> 
+      <section className={utilStyles.headingMd}>
+        <p>
+        Hey I&lsquo;m Phil - I made this site to help me get my projects out in the open, including a few blog posts along the way. 
+
+        I set a few guidelines to help to this - </p> 
+        <ul> 
+          <li> • Prioritize low / no code solutions to get it done ASAP (refactor later)</li>
+          <li> • Post process here (as much as possible) </li>
+          <li> • Fail! Fail quickly and often. But also recognize the wins along the way. </li>  
+        </ul> 
+      </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Projects</h2>
         <ul className={utilStyles.list}>

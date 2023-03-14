@@ -15,7 +15,7 @@ export default function Home({ allPostsData, allProjectData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
+      {/* <section className={utilStyles.headingMd}>
         <p>Software Engineer / Manager</p>
         <p>
         Hey I&lsquo;m Phil - I made this site to help me get my projects out in the open, including a few blog posts along the way. 
@@ -26,7 +26,7 @@ export default function Home({ allPostsData, allProjectData }) {
           <li> • Post process here (as much as possible) </li>
           <li> • Fail! Fail quickly and often. But also recognize the wins along the way. </li>  
         </ul> 
-      </section>
+      </section> */}
       <hr/> 
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Projects</h2>
