@@ -11,7 +11,7 @@ export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/emoji.png" />
         <meta
           name="description"
           content="Phil G - Software Engineer"
