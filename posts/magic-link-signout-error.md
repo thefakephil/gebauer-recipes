@@ -33,8 +33,9 @@ export default function EditProile() {
 	
 	return (
 		{!user ? //conditionally render based on user info (just an example) 
-			<button onClick={() => signInWithEmail()} Sign in </button> // function that calls Magic Link
-		  : <button onClick{async () => await supabaseClient.auth.signOut(); }} Log Out </button> // inline for simplicity - kept it like this to match how it was pulled from the Github issue
+			<button onClick={() => signInWithEmail()} Sign in </button>
+            // function that calls Magic Link
+		  : <button onClick{async () => await supabaseClient.auth.signOut(); }} Log Out </button> // inline for simplicity - update as needed
 		}
 	)
 ```
