@@ -30,6 +30,10 @@ li {
   list-style: none;
 }
 
+pre {
+  overflow: scroll;
+}
+
 ::highlight(p) {
   color: #ad26ad;
   text-decoration: underline;

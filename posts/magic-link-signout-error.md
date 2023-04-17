@@ -11,7 +11,7 @@ I've been working on implementing some basic auth for a new project, and I decid
 
 Could be a combination of a few things (including that the site is SSR with NextJS) - but what fixed it for me was using the `useSupabaseClient` from the auth-helpers-react package. Hope this helps someone else down the line - below is a quick implementation: 
 
-## Solution (what worked for me) 
+## Code Example (what worked for me) 
 
 ```
 //Example component using the auth-helper-react
