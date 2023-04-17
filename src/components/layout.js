@@ -4,7 +4,7 @@ import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 
-const name = 'Phil G';
+const name = 'Phil Gebauer';
 export const siteTitle = 'Phil G';
 
 export default function Layout({ children, home }) {
@@ -14,7 +14,7 @@ export default function Layout({ children, home }) {
         <link rel="icon" href="/emoji.png" />
         <meta
           name="description"
-          content="Phil G - Software Engineer"
+          content="Phil Gebauer - Software Engineer"
         />
         <meta
           property="og:image"
