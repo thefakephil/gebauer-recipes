@@ -5,7 +5,7 @@ import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 
 const name = 'Gebauer Recipes';
-export const siteTitle = 'Gebuaer Family Recipes';
+export const siteTitle = 'Gebauer Family Recipes';
 
 export default function Layout({ children, home }) {
   return (

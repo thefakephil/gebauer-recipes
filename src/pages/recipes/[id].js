@@ -28,7 +28,6 @@ export default function Recipe({ recipeData }) {
   export async function getStaticProps({ params }) {
     // Add the "await" keyword like this:
     const recipeData = await getRecipeData(params.id);
-    console.log('recipe data', recipeData)
     return {
       props: {
         recipeData,
@@ -38,7 +37,6 @@ export default function Recipe({ recipeData }) {
 
 export async function getStaticPaths() {
   const paths = getAllRecipesIds();
-  console.log('paths', paths)
   return {
     paths,
     fallback: false,

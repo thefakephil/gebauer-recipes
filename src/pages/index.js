@@ -9,14 +9,11 @@ import { getSortedRecipesData } from '../../lib/recipes'
 import { useEffect, useState } from 'react';
 
 export default function PostList({ allRecipesData }) {
-  console.log('allRecipeData', allRecipesData)
   const alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
   let [filterBy, setFilter ] = useState()
   let [filteredRecipeData, setRecipeData ] = useState(allRecipesData)
-  console.log(filteredRecipeData, 'filteredRecipeData')
 
   const filterRecipeByLetter = (arr, input) => {
-    console.log('input', input)
     let fr = arr.filter(letter => input === letter.title.charAt(0))
     return setRecipeData(fr)
   };
