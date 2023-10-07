@@ -12,6 +12,11 @@
   list-style: none;
 }
 
+.filterContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
 .description {
   display: inherit;
   justify-content: inherit;

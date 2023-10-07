@@ -4,8 +4,8 @@ import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 
-const name = 'Phil Gebauer';
-export const siteTitle = 'Phil G';
+const name = 'Gebauer Recipes';
+export const siteTitle = 'Gebuaer Family Recipes';
 
 export default function Layout({ children, home }) {
   return (
@@ -14,7 +14,7 @@ export default function Layout({ children, home }) {
         <link rel="icon" href="/emoji.png" />
         <meta
           name="description"
-          content="Phil Gebauer - Software Engineer"
+          content="Gebauer Family Recipes"
         />
         <meta
           property="og:image"
@@ -25,7 +25,7 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className={styles.header}>
+      {/* <header className={styles.header}>
         {home ? (
           <>
             <Image
@@ -55,7 +55,15 @@ export default function Layout({ children, home }) {
             </h2>
           </>
         )}
-      </header>
+      </header> */}
+      {!home && (
+        <div className={styles.backToHome}>
+          <Link href="/">← Back to home</Link>
+        </div>
+      )}
+      {home && 
+            <h1> Gebauer Family Recipes </h1>
+      }
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>

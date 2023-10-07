@@ -1,22 +1,19 @@
 import Head from 'next/head';
-import Layout, { siteTitle } from '../components/layout';
-import utilStyles from '../styles/utils.module.css'
+import Layout, { siteTitle } from '../../components/layout';
+import utilStyles from '../../styles/utils.module.css'
 import Link from 'next/link';
-import Nav from '../components/nav'
-// import Date from '../../components/date';
-import { getSortedRecipesData } from '../../lib/recipes'
-// import styles from './recipes.module.css';
+import Nav from '../../components/nav'
+import Date from '../../components/date';
+import { getSortedRecipesData } from '../../../lib/recipes'
+import styles from './recipes.module.css';
 import { useEffect, useState } from 'react';
 
 export default function PostList({ allRecipesData }) {
-  console.log('allRecipeData', allRecipesData)
   const alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
   let [filterBy, setFilter ] = useState()
   let [filteredRecipeData, setRecipeData ] = useState(allRecipesData)
-  console.log(filteredRecipeData, 'filteredRecipeData')
 
   const filterRecipeByLetter = (arr, input) => {
-    console.log('input', input)
     let fr = arr.filter(letter => input === letter.title.charAt(0))
     return setRecipeData(fr)
   };
@@ -43,7 +40,7 @@ export default function PostList({ allRecipesData }) {
         <title>{siteTitle}</title>
       </Head>
       <hr/> 
-      <div className={utilStyles.filterContainer}>
+      <div className={styles.filterContainer}>
             {alphabet.map((letter) =>
                 <a key={letter.toString()} value={letter} onClick={ event => callFilteringFunctions( allRecipesData, event.target.outerText ) }>
                      {letter.toUpperCase()} 
