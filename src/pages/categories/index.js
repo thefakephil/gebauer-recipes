@@ -13,9 +13,9 @@ export default function PostList({ allRecipesData, allRecipesMetadata }) {
   let [list, setList ] = useState()
   let [filteredRecipeData, setRecipeData ] = useState(allRecipesData)
 
-  useEffect(() => {
-    createList
-  }, [])
+  // useEffect(() => {
+  //   createList
+  // }, [])
 
 //   console.log(categories, 'cats')
 
@@ -48,7 +48,7 @@ function createList() {
         <div className={utilStyles.headingSm}> {allRecipesMetadata} </div>
         <ul className={utilStyles.list}>
         {allRecipesMetadata.map((item) => (
-          <h2> {item} </h2>
+          <h2 key={item}> {item} </h2>
         ))}
         {filteredRecipeData.map(({ id, title }) => (
             <li className={utilStyles.listItem} key={id}>
