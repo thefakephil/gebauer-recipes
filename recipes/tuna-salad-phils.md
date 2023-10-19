@@ -1,6 +1,8 @@
 ---
 title: 'Tuna Salad - Phils Recipe'
 date: '2023-10-07'
+categories: 'Fish'
+author: 'Phil'
 ---
 
 ## Ingredients 

@@ -1,6 +1,8 @@
 ---
 title: 'Enchiladas'
 date: '2023-10-07'
+categories: 'Mexican, Beef'
+author: 'Phil'
 ---
 
 ## Ingredients 

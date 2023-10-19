@@ -1,6 +1,8 @@
 ---
 title: 'Tater Tot Hotdish'
 date: '2023-10-06'
+categories: 'Casserole'
+author: 'Phil'
 ---
 
 ## Ingredients 

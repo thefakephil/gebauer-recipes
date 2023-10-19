@@ -1,6 +1,8 @@
 ---
 title: 'Chicken Adobo - Instant Pot'
 date: '2023-10-07'
+categories: 'Instant Pot, Chicken'
+author: 'Phil'
 ---
 
 ## Ingredients 

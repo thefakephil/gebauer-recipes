@@ -1,6 +1,8 @@
 ---
 title: 'Waffles - Phils Recipe'
 date: '2023-10-07'
+categories: 'Breakfast'
+author: 'Phil'
 ---
 
 ## Ingredients 

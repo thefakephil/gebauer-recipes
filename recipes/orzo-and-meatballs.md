@@ -1,13 +1,15 @@
 ---
 title: 'Orzo and Meatballs'
 date: '2023-10-06'
+categories: 'Pasta'
+author: 'Phil'
 ---
 
 ## Ingredients 
 
 Makes 5-7 servings (depends how many veggies / meatballs you put in)
 
--   20 or so Cooked frozen Meatballs of choice
+-   20 or so cooked and frozen meatballs of choice
 -   2  cloves  garlic  (finely minced)
 -   2½  cups  low sodium chicken broth
 -   1½  cups  dry orzo pasta  (about 278 grams)
@@ -31,7 +33,7 @@ Makes 5-7 servings (depends how many veggies / meatballs you put in)
 
 This will burn easy! Keep on a low heat after you add the Orzo. Doesn't hurt to stir it a little while its cooking too
 
-Veggies I like to add: Carrots, spinach, mushrooms, 
+Veggies I like to add: Carrots, spinach, mushrooms
 
 Stores / reheats well
 
