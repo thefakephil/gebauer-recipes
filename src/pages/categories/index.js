@@ -10,15 +10,21 @@ import { useEffect, useState } from 'react';
 
 export default function PostList({ allRecipesData, allRecipesMetadata }) {
   const alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-  let [categories, setCategories ] = useState()
+  let [list, setList ] = useState()
   let [filteredRecipeData, setRecipeData ] = useState(allRecipesData)
 
-//   useEffect(() => {
-//     const uniq = [...new Set(allRecipesMetadata)];
-//     setCategories(uniq)
-//   }, [])
+  useEffect(() => {
+    createList
+  }, [])
 
 //   console.log(categories, 'cats')
+
+function createList() {
+  allRecipesData.map((item) => (
+    list = list[item]
+  ))
+  return 
+}
 
   return (
     <>

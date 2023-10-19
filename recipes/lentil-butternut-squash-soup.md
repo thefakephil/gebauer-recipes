@@ -29,15 +29,15 @@ Makes a lot of soup - maybe 8 servings
 ## Instructions
 - Cut onion, mince garlic / ginger.
 
--  Cub and peel veggies. Aim for 1/2 inch cubes or so. 
+-  Cube and peel veggies. Aim for 1/2 inch cubes or so. 
     
--  Saute onion, garlic and ginger. Add cubed vegged and cook when onion is translucent. 
+-  Saute onion, garlic and ginger. Add cubed veggies and cook when onion is translucent. 
     
 -  Add tumeric, curry powder and the can of coconut milk. Stir in peanut butter as well. 
     
 -  Add the cup of lentils and cover - cook for 20 min or until their tender. 
 
-- Add spinach at the end let cook. Add peanuts and serve - enjoy!
+- Add spinach at the end and let wilt. Add peanuts and serve - enjoy!
 
 ## Notes
 
