@@ -8,10 +8,27 @@ import { getSortedRecipesData, getRecipeMetadata} from '../../../lib/recipes'
 import styles from './categories.module.css';
 import { useEffect, useState } from 'react';
 
+export function Title({ item }) {
+  return (
+    <h2 key={item}> {item} </h2>
+  )
+}
+
+export function RecipeLink({ link }) {
+  return (
+    <li className={utilStyles.listItem} key={id}>
+    <Link href={`/recipes/${id}`}>{title}</Link>
+    <br />
+     </li>
+  )
+}
 export default function PostList({ allRecipesData, allRecipesMetadata }) {
   const alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
   let [list, setList ] = useState()
   let [filteredRecipeData, setRecipeData ] = useState(allRecipesData)
+  let [item, setCurrentItem ] = useState('')
+  let filteredList;
+
 
   // useEffect(() => {
   //   createList
@@ -19,12 +36,27 @@ export default function PostList({ allRecipesData, allRecipesMetadata }) {
 
 //   console.log(categories, 'cats')
 
-function createList() {
-  allRecipesData.map((item) => (
-    list = list[item]
-  ))
-  return 
+function filterBasedOnCat(recipe) {
+  console.log(recipe, 'recipe')
+  let filteredRecipes = allRecipesData.filter(item => item.metaData.includes(recipe));
+  console.log(filteredRecipes, 'filtered recipes')
+  filteredList = filteredRecipes;
 }
+
+console.log('alldata', allRecipesData)
+console.log('metadata', allRecipesMetadata)
+
+// function createList() {
+//   allRecipesMetadata.map((item) => (
+//     <div> 
+//     <h2 key={item}> {item} </h2>
+//     {filteredRecipeData.map(({id, recipe}) => (
+//       <div> recipe {recipe} item {id} </div>
+//     ))}
+//     </div> 
+//   ))}
+//   return 
+// }
 
   return (
     <>
@@ -50,17 +82,23 @@ function createList() {
         {allRecipesMetadata.map((item) => (
           <div> 
           <h2 key={item}> {item} </h2>
-          {filteredRecipeData.map(({id, recipe}) => (
-            <div> recipe {recipe} item {id} </div>
-          ))}
-          </div> 
-        ))}
-        {filteredRecipeData.map(({ id, title }) => (
+          {filterBasedOnCat(item)}
+          <ul> 
+          {filteredList.map(({id, title}) => (
             <li className={utilStyles.listItem} key={id}>
               <Link href={`/recipes/${id}`}>{title}</Link>
               <br />
             </li>
           ))}
+          </ul>
+          </div> 
+        ))}
+        {/* {filteredRecipeData.map(({ id, title }) => (
+            <li className={utilStyles.listItem} key={id}>
+              <Link href={`/recipes/${id}`}>{title}</Link>
+              <br />
+            </li>
+          ))} */}
         </ul>
       </section>
       <hr/>
