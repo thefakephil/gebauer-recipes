@@ -1,14 +1,11 @@
 ---
 title: 'Chinese Chicken Curry'
-date: '2023-10-07'
-categories: 'Chicken, Curry, Chinese'
+date: '2023-11-09'
+categories: 'Chicken, Curry, Chinese, Lunch Prep'
 author: 'Phil'
 ---
 
 ## Ingredients 
-(Recipe is for instant pot)
-
-Makes 4-8 servings - easily doubles or even triples if you want
 
 - 12 oz. boneless skinless chicken breast
 (thinly sliced)
