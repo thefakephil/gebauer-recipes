@@ -1,5 +1,5 @@
 ---
-title: 'Waffles - Phils Recipe'
+title: 'Waffles'
 date: '2023-10-07'
 categories: 'Breakfast'
 author: 'Phil'

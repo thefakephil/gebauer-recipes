@@ -1,5 +1,5 @@
 ---
-title: 'Tuna Salad - Phils Recipe'
+title: 'Tuna Salad'
 date: '2023-10-07'
 categories: 'Fish'
 author: 'Phil'
