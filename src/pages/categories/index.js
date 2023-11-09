@@ -34,7 +34,7 @@ function createList() {
         <title>{siteTitle}</title>
       </Head>
       <hr/> 
-      <div className={styles.filterContainer}>
+      {/* <div className={styles.filterContainer}>
             {alphabet.map((letter) =>
                 <a key={letter.toString()} value={letter} onClick={ event => callFilteringFunctions( allRecipesData, event.target.outerText ) }>
                      {letter.toUpperCase()} 
@@ -42,13 +42,18 @@ function createList() {
             )}=
             <br />  
             <a onClick={ () => clearFiltering() }> Clear Filter </a> 
-        </div>
+        </div> */}
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Recipes</h2>
         <div className={utilStyles.headingSm}> {allRecipesMetadata} </div>
         <ul className={utilStyles.list}>
         {allRecipesMetadata.map((item) => (
+          <div> 
           <h2 key={item}> {item} </h2>
+          {filteredRecipeData.map(({id, recipe}) => (
+            <div> recipe {recipe} item {id} </div>
+          ))}
+          </div> 
         ))}
         {filteredRecipeData.map(({ id, title }) => (
             <li className={utilStyles.listItem} key={id}>
