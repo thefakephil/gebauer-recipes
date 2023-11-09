@@ -38,8 +38,6 @@ export default function PostList({ allRecipesData }) {
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
-        <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
-
       </Head>
       <hr/> 
       <div className={utilStyles.filterContainer}>
@@ -64,9 +62,6 @@ export default function PostList({ allRecipesData }) {
       </section>
       <hr/>
     </Layout>
-    <stripe-pricing-table pricing-table-id="prctbl_1O4ZeFDjpI6bav5WvKxLOeSQ"
-publishable-key="pk_live_51N05giDjpI6bav5Wp8D2nXe9ZTmJTF3ShbgcrjbvL9OVx4WSBWnm1TqfAsZgVpzTqFtUNKCStMyk6prnBg8D42HY00RN1jOBqZ">
-</stripe-pricing-table>
   </>
   )
 }
