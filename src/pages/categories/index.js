@@ -8,21 +8,21 @@ import { getSortedRecipesData, getRecipeMetadata} from '../../../lib/recipes'
 import styles from './categories.module.css';
 import { useEffect, useState } from 'react';
 
-export function Title({ item }) {
-  return (
-    <h2 key={item}> {item} </h2>
-  )
-}
+// export function Title({ item }) {
+//   return (
+//     <h2 key={item}> {item} </h2>
+//   )
+// }
 
-export function RecipeLink({ link }) {
-  return (
-    <li className={utilStyles.listItem} key={id}>
-    <Link href={`/recipes/${id}`}>{title}</Link>
-    <br />
-     </li>
-  )
-}
-export default function PostList({ allRecipesData, allRecipesMetadata }) {
+// export function RecipeLink({ link }) {
+//   return (
+//     <li className={utilStyles.listItem} key={id}>
+//     <Link href={`/recipes/${id}`}>{title}</Link>
+//     <br />
+//      </li>
+//   )
+// }
+export default function Categories({ allRecipesData, allRecipesMetadata }) {
   const alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
   let [list, setList ] = useState()
   let [filteredRecipeData, setRecipeData ] = useState(allRecipesData)
@@ -37,26 +37,9 @@ export default function PostList({ allRecipesData, allRecipesMetadata }) {
 //   console.log(categories, 'cats')
 
 function filterBasedOnCat(recipe) {
-  console.log(recipe, 'recipe')
   let filteredRecipes = allRecipesData.filter(item => item.metaData.includes(recipe));
-  console.log(filteredRecipes, 'filtered recipes')
   filteredList = filteredRecipes;
 }
-
-console.log('alldata', allRecipesData)
-console.log('metadata', allRecipesMetadata)
-
-// function createList() {
-//   allRecipesMetadata.map((item) => (
-//     <div> 
-//     <h2 key={item}> {item} </h2>
-//     {filteredRecipeData.map(({id, recipe}) => (
-//       <div> recipe {recipe} item {id} </div>
-//     ))}
-//     </div> 
-//   ))}
-//   return 
-// }
 
   return (
     <>
@@ -66,39 +49,24 @@ console.log('metadata', allRecipesMetadata)
         <title>{siteTitle}</title>
       </Head>
       <hr/> 
-      {/* <div className={styles.filterContainer}>
-            {alphabet.map((letter) =>
-                <a key={letter.toString()} value={letter} onClick={ event => callFilteringFunctions( allRecipesData, event.target.outerText ) }>
-                     {letter.toUpperCase()} 
-                </a> 
-            )}=
-            <br />  
-            <a onClick={ () => clearFiltering() }> Clear Filter </a> 
-        </div> */}
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Recipes</h2>
-        <div className={utilStyles.headingSm}> {allRecipesMetadata} </div>
+        {/* <div className={utilStyles.headingSm}> {allRecipesMetadata} </div> */}
         <ul className={utilStyles.list}>
         {allRecipesMetadata.map((item) => (
-          <div> 
-          <h2 key={item}> {item} </h2>
+          <div key={item}> 
+          <h2 > {item} </h2>
           {filterBasedOnCat(item)}
           <ul> 
-          {filteredList.map(({id, title}) => (
+          {filteredList.map(({id, title, index}) => (
             <li className={utilStyles.listItem} key={id}>
-              <Link href={`/recipes/${id}`}>{title}</Link>
+              <Link key={index} href={`/recipes/${id}`}>{title}</Link>
               <br />
             </li>
           ))}
           </ul>
           </div> 
         ))}
-        {/* {filteredRecipeData.map(({ id, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/recipes/${id}`}>{title}</Link>
-              <br />
-            </li>
-          ))} */}
         </ul>
       </section>
       <hr/>
