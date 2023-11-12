@@ -33,12 +33,17 @@ Toppings:
 
 ## Instructions
 
-- Weigh out dough ingredients and give a rough mix. When incorporated proof until doubled (couple hours or so). 
-- Add dough to pan and spread out. Let it sit and repeat every 15 min until it stretchs to the sides of the pan. Let it sit for a hour / couple hours until it is bubbly like a foccacia. 
-- Combine all the sauce ingredients in a sauce pan and slowly simmer for maybe 20 min.
-- Cube the block of cheese. When the dough is ready add ingredients to the bottom. Then the cubed cheese. Then the sauce on top. 
-- Preheat oven to 450 degrees. 
-- Cook for 12-15 min or untill the cheese is dark on the edges. When cooked take out of pan and cool on a cookie rack. Cut and enjoy! 
+* Weigh out dough ingredients and give a rough mix. When incorporated proof until doubled (couple hours or so). 
+
+* Add dough to pan and spread out. Let it sit and repeat every 15 min until it stretchs to the sides of the pan. Let it sit for a hour / couple hours until it is bubbly like a foccacia. 
+
+* Combine all the sauce ingredients in a sauce pan and slowly simmer for maybe 20 min.
+
+* Cube the block of cheese. When the dough is ready add ingredients to the bottom. Then the cubed cheese. Then the sauce on top. 
+
+* Preheat oven to 450 degrees. 
+
+* Cook for 12-15 min or untill the cheese is dark on the edges. When cooked take out of pan and cool on a cookie rack. Cut and enjoy! 
 
 
 
