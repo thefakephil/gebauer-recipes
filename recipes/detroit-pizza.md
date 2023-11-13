@@ -1,5 +1,5 @@
 ---
-title: 'Detroit Pizza'
+title: 'Detroit Style Pizza'
 date: '2023-11-12'
 categories: 'Pizza'
 author: 'Phil'
